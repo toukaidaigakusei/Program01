@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>社会に役立つOR</title>
+        <script src="./OR_D'Hondt.js"></script>
+    </head>
+    <body>
+        <h1>ドント式による議席数割り当て</h1>
+
+        <p>ドント式は日本の<strong>衆議院・参議院の比例代表選挙</strong>で用いられている手法です。<br>
+            本プログラムは必要な情報を入力するだけで議席数の割り当てが可能です。<br>
+            入力を終えたら<strong>議席割り当て</strong>ボタンを押してください！！</p>
+
+        <ul>
+            <li>はじめに政党数を入力してください</li>
+            <input type="text" id="text1">
+            <button type="button" onclick="Seitou()">政党数決定！！</button>
+            <li>各政党の総得票数を入力してください</li>
+            <button type="button" onclick="Tokuhyou()">得票数入力</button>
+            <li>議席の総数を入力してください</li>
+            <input type="text" id="text2">
+            <button type="button" onclick="Giseki()">議席数決定</button>
+        </ul>
+
+        <button type="button" onclick="Donto()">議席割り当て</button>
+    
+        <p id="Kekka"></p>
+        
+    </body>
+    <style> 
+        strong{color: red;}
+    </style>
+</html>
